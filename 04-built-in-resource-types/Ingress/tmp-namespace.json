@@ -1,0 +1,63 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"creationTimestamp\":\"2025-04-10T17:45:34Z\",\"deletionTimestamp\":\"2025-04-10T21:20:14Z\",\"labels\":{\"kubernetes.io/metadata.name\":\"ingress-nginx\",\"name\":\"ingress-nginx\"},\"name\":\"ingress-nginx\",\"resourceVersion\":\"674763\",\"uid\":\"667d6e2e-33a5-4d73-be44-c5801792a076\"},\"spec\":{\"finalizers\":[]},\"status\":{\"conditions\":[{\"lastTransitionTime\":\"2025-04-10T21:20:19Z\",\"message\":\"All resources successfully discovered\",\"reason\":\"ResourcesDiscovered\",\"status\":\"False\",\"type\":\"NamespaceDeletionDiscoveryFailure\"},{\"lastTransitionTime\":\"2025-04-10T21:20:19Z\",\"message\":\"All legacy kube types successfully parsed\",\"reason\":\"ParsedGroupVersions\",\"status\":\"False\",\"type\":\"NamespaceDeletionGroupVersionParsingFailure\"},{\"lastTransitionTime\":\"2025-04-10T21:20:19Z\",\"message\":\"All content successfully deleted, may be waiting on finalization\",\"reason\":\"ContentDeleted\",\"status\":\"False\",\"type\":\"NamespaceDeletionContentFailure\"},{\"lastTransitionTime\":\"2025-04-10T21:20:19Z\",\"message\":\"Some resources are remaining: services. has 1 resource instances\",\"reason\":\"SomeResourcesRemain\",\"status\":\"True\",\"type\":\"NamespaceContentRemaining\"},{\"lastTransitionTime\":\"2025-04-10T21:20:19Z\",\"message\":\"Some content in the namespace has finalizers remaining: service.kubernetes.io/load-balancer-cleanup in 1 resource instances\",\"reason\":\"SomeFinalizersRemain\",\"status\":\"True\",\"type\":\"NamespaceFinalizersRemaining\"}],\"phase\":\"Terminating\"}}\n"
+        },
+        "creationTimestamp": "2025-04-10T17:45:34Z",
+        "deletionTimestamp": "2025-04-10T21:20:14Z",
+        "labels": {
+            "kubernetes.io/metadata.name": "ingress-nginx",
+            "name": "ingress-nginx"
+        },
+        "name": "ingress-nginx",
+        "resourceVersion": "675077",
+        "uid": "667d6e2e-33a5-4d73-be44-c5801792a076"
+    },
+    "spec": {
+        "finalizers": [
+            "kubernetes"
+        ]
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastTransitionTime": "2025-04-10T21:20:19Z",
+                "message": "All resources successfully discovered",
+                "reason": "ResourcesDiscovered",
+                "status": "False",
+                "type": "NamespaceDeletionDiscoveryFailure"
+            },
+            {
+                "lastTransitionTime": "2025-04-10T21:20:19Z",
+                "message": "All legacy kube types successfully parsed",
+                "reason": "ParsedGroupVersions",
+                "status": "False",
+                "type": "NamespaceDeletionGroupVersionParsingFailure"
+            },
+            {
+                "lastTransitionTime": "2025-04-10T21:20:19Z",
+                "message": "All content successfully deleted, may be waiting on finalization",
+                "reason": "ContentDeleted",
+                "status": "False",
+                "type": "NamespaceDeletionContentFailure"
+            },
+            {
+                "lastTransitionTime": "2025-04-10T21:20:19Z",
+                "message": "Some resources are remaining: services. has 1 resource instances",
+                "reason": "SomeResourcesRemain",
+                "status": "True",
+                "type": "NamespaceContentRemaining"
+            },
+            {
+                "lastTransitionTime": "2025-04-10T21:20:19Z",
+                "message": "Some content in the namespace has finalizers remaining: service.kubernetes.io/load-balancer-cleanup in 1 resource instances",
+                "reason": "SomeFinalizersRemain",
+                "status": "True",
+                "type": "NamespaceFinalizersRemaining"
+            }
+        ],
+        "phase": "Terminating"
+    }
+}
